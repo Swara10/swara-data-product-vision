@@ -1,13 +1,23 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useState } from "react";
+import { SidebarProvider } from "@/components/ui/sidebar";
+import { WorkspaceSidebar } from "@/components/WorkspaceSidebar";
+import { WorkspaceHeader } from "@/components/WorkspaceHeader";
+import { WorkspaceContent } from "@/components/WorkspaceContent";
 
 const Index = () => {
+  const [activeWorkspace, setActiveWorkspace] = useState("My Workspace");
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <SidebarProvider>
+      <div className="min-h-screen flex w-full bg-gray-50">
+        <WorkspaceSidebar />
+        <div className="flex-1 flex flex-col">
+          <WorkspaceHeader workspaceName={activeWorkspace} />
+          <WorkspaceContent />
+        </div>
       </div>
-    </div>
+    </SidebarProvider>
   );
 };
 
