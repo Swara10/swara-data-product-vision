@@ -7,38 +7,20 @@ import { Calendar, Award, MapPin } from 'lucide-react';
 const Education = () => {
   const education = [
     {
-      degree: "Master of Science in Management of Technology",
-      institution: "New York University - Tandon School of Engineering",
-      location: "New York, USA",
-      period: "2024 - 2026",
-      status: "In Progress",
-      gpa: "N/A",
-      relevantCourses: [
-        "Technology Strategy",
-        "Innovation Management", 
-        "Data Analytics for Managers",
-        "Project Management",
-        "Digital Transformation"
-      ],
-      achievements: [
-        "Graduate Research Assistant",
-        "Dean's List Candidate"
-      ]
-    },
-    {
-      degree: "Bachelor of Engineering in Information Technology",
+      degree: "Bachelor of Science in Information Technology",
       institution: "University of Mumbai - Vidyalankar Institute of Technology",
       location: "Mumbai, India", 
       period: "2018 - 2022",
       status: "Completed",
       gpa: "8.69/10 CGPA",
       relevantCourses: [
+        "Project Development",
+        "Software Development Lifecycle",
         "Data Structures & Algorithms",
         "Database Management Systems",
         "Software Engineering",
         "Machine Learning",
-        "Web Development",
-        "Computer Networks"
+        "Web Development"
       ],
       achievements: [
         "Intra College Research competition",
