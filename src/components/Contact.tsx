@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Mail, Github, User, Download } from 'lucide-react';
+import { Mail, Github, User, Download, Phone } from 'lucide-react';
 
 const Contact = () => {
   const handleResumeDownload = () => {
@@ -31,6 +30,16 @@ const Contact = () => {
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
               <div className="space-y-4">
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                    <Phone className="w-6 h-6 text-green-600" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-800">Phone</p>
+                    <p className="text-gray-600">+91-1234567890</p>
+                  </div>
+                </div>
+
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                     <Mail className="w-6 h-6 text-blue-600" />
