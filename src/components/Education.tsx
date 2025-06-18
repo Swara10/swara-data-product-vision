@@ -10,9 +10,9 @@ const Education = () => {
       degree: "Bachelor of Science in Information Technology",
       institution: "University of Mumbai - Vidyalankar Institute of Technology",
       location: "Mumbai, India", 
-      period: "2018 - 2022",
+      period: "2019 - 2022",
       status: "Completed",
-      gpa: "8.69/10 CGPA",
+      gpa: "9.63/10 CGPA",
       relevantCourses: [
         "Project Development",
         "Software Development Lifecycle",
