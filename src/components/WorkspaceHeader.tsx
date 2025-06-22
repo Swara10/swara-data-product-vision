@@ -1,7 +1,8 @@
 
-import { Bell, SidebarTrigger, User } from "lucide-react";
+import { Bell, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { SidebarTrigger } from "@/components/ui/sidebar";
 
 interface WorkspaceHeaderProps {
   workspaceName: string;
